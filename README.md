@@ -1,11 +1,12 @@
 # Instagram Ranked Feed Platform
 - This is the frontend portal of the elastic-agent API, to display IG data that stored in elastic cloud service.
+- Developed with Vue.js 
 - Please start the backend service first , ref : https://github.com/apple0032/elastic-agent
 - `http://localhost:3000` is the defalut host name & port for the backend service
-- After starting the backend service, try `http://localhost:3000/test` to test it is working
+- After starting the backend service, try `http://localhost:3000/test` to test the service is working
 
 ### NOTES
-- Please make suer that port 3000 & 8080 is not listening in local machine, otherwise will need to config the listening port manually in the config file. 
+- Please make sure that port 3000 & 8080 is not listening in local machine, otherwise will need to config the listening port manually in the config file. 
 
 ## Project setup
 ```

@@ -7,6 +7,8 @@
 
 ### NOTES
 - Please make sure that port 3000 & 8080 is not listening in local machine, otherwise will need to config the listening port manually in the config file. 
+- Those Instagram media source come from Instagram graph API and the media is only a url that stored in Instagram server which is only accessible temporarily 
+- We have two solutions : get Instagram media in real-time OR cronjob script to retrieve data
 
 ## Project setup
 ```

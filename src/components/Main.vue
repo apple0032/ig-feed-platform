@@ -8,20 +8,29 @@
           <b-tab :title=tabData.title @click="changeTab(tabData.tab)">
             <b-container class="ig_container">
               <b-row>
-                <b-col cols="12" v-for="(data, index2) in ig_data" :key="index2" class="ig_box" @click="clickBox(data['_source']['permalink'])">
+                <b-col cols="12" v-for="(data, index2) in ig_data" :key="index2" class="ig_box">
                   <div v-if="!(data['_source']['media_type']).includes('VIDEO')">
                     <img v-bind:src="data['_source']['media_url']" />
                   </div>
                   <div v-else>
                     <video width="50%" controls>
-                      <source v-bind:src="data['_source']['media_url']" type="video/mp4">
+
+                      <!--- IG video API request token by timestamp, so the media will expired later and no longer accessible -->
+                      <!-- <source v-bind:src="data['_source']['media_url']" type="video/mp4"> -->  <!-- Real instagram video object-->
+
+                      <!-- Use dummy video for display -->
+                      <source v-bind:src="`http://apple0032.com/vue-demo/dummy.mp4`" type="video/mp4">
+
                       Your browser does not support the video tag.
                     </video>
                   </div>
                   <div class="ig_details">
-                    💕 {{data['_source']['like_count']}}
-                    🗣️ {{data['_source']['comments_count']}}
                     📅 {{ showDate( data['_source']['timestamp']) }}
+                    💕 {{data['_source']['like_count']}}
+                    💬 {{data['_source']['comments_count']}}
+                    <div class="sourceLink" @click="clickBox(data['_source']['permalink'])">
+                    🌍 Source
+                    </div>
                   </div>
                 </b-col>
               </b-row>

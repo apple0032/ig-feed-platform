@@ -9,7 +9,7 @@
 }
 
 .ig_container video{
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .ig_box{
@@ -17,7 +17,6 @@
     border-radius: 10px;
     margin-bottom: 10px;
     padding : 10px;
-    cursor: pointer;
 }
 
 .ig_box:hover{
@@ -25,6 +24,19 @@
     transition: 0.2s all;
 }
 
+.sourceLink{
+    display: inline-block;
+    padding: 0 5px;
+    border: 1px solid #2c3e50;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sourceLink:hover{
+    background: rgba(0, 86, 226, 0.43);
+    transition: 0.2s all;
+}
 
 h3 {
     margin: 40px 0 0;

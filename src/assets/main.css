@@ -1,0 +1,42 @@
+.ig_details{
+    border : 1px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.ig_container img{
+    width: 50%;
+}
+
+.ig_container video{
+    max-width: 300px;
+}
+
+.ig_box{
+    border : 1px solid #616161;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding : 10px;
+    cursor: pointer;
+}
+
+.ig_box:hover{
+    background: rgba(77, 226, 161, 0.43);
+    transition: 0.2s all;
+}
+
+
+h3 {
+    margin: 40px 0 0;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+a {
+    color: #42b983;
+}
